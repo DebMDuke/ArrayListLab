@@ -8,7 +8,7 @@ import java.util.ListIterator;
 
 
 public class MyArrayList<T> implements List<T> {
-	int size;                    // keeps track of the number of elements
+	private int size;                    // keeps track of the number of elements
 	private T[] array;           // stores the elements
 
 
