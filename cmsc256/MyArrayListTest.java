@@ -55,12 +55,12 @@ public class MyArrayListTest {
 
 	@Test  (expected=IndexOutOfBoundsException.class)
 	public void testAddInt4() {
-		mylist.set(-1, 0);
+		mylist.add(-1, 0);
 	} 
 
 	@Test  (expected=IndexOutOfBoundsException.class)
 	public void testAddInt5() {
-		mylist.set(4, 0);
+		mylist.add(4, 0);
 	} 
 
 	@Test  
