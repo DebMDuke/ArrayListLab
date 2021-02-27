@@ -154,7 +154,7 @@ public class MyArrayListTest {
 	@Test
 	public void testIndexOfNull2() {
 		mylist.add(null);
-		assertEquals("Null added to list", -1, 3, mylist.indexOf(null));
+		assertEquals("Null added to list", 3, mylist.indexOf(null));
 	}
 
 	@Test
