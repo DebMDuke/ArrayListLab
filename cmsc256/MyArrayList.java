@@ -8,7 +8,7 @@ import java.util.ListIterator;
 
 
 public class MyArrayList<T> implements List<T> {
-	private int size;                    // keeps track of the number of elements
+	private int size;            // keeps track of the number of elements
 	private T[] array;           // stores the elements
 
 
@@ -44,7 +44,7 @@ public class MyArrayList<T> implements List<T> {
 	public boolean addAll(Collection<? extends T> collection) {
 		boolean flag = true;
 		for (T element: collection) {
-			flag &= add(element);
+			flag = flag && add(element);
 		}
 		return flag;
 	}
