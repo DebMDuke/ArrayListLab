@@ -97,7 +97,7 @@ public class MyArrayList<T> implements List<T> {
 	 * @param target
 	 * @param object
 	 */
-	private boolean equals(T target, T element) {
+	private boolean equals(Object target, Object element) {
 		if (target == null) {
 			return element == null;
 		} else {
