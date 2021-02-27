@@ -71,6 +71,9 @@ public class MyArrayListTest {
 
 	@Test  
 	public void testAddInt7() {
+		mylist.add(1, 5);
+		mylist.add(4, 0);
+		mylist.add(0, 6);
 		mylist.add(5, 7);
 		MatcherAssert.assertThat(mylist.get(5), is(7));
 	}
