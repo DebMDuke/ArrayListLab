@@ -165,7 +165,7 @@ public class MyArrayList<T> implements List<T> {
 	public boolean removeAll(Collection<?> collection) {
 		boolean flag = true;
 		for (Object obj: collection) {
-			flag &= remove(obj);
+			flag = flag && remove(obj);
 		}
 		return flag;
 	}
