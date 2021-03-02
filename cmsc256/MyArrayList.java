@@ -25,14 +25,18 @@ public class MyArrayList<T> implements List<T> {
 	public boolean add(T newEntry) {
 		if (size >= array.length) {
 			// make a bigger array and copy over the elements
-			@SuppressWarnings("unchecked") // see comment in the constructor
-			T[] bigger = (T[]) new Object[array.length * 2];
-			System.arraycopy(array, 0, bigger, 0, array.length);
-			array = bigger;
+			doubleArray();
 		}
 		array[size] = newEntry;
 		size++;
 		return true;
+	}
+	
+	private void doubleArray() {
+		@SuppressWarnings("unchecked") // see comment in the constructor
+		T[] bigger = (T[]) new Object[array.length * 2];
+		System.arraycopy(array, 0, bigger, 0, array.length);
+		array = bigger;
 	}
 
 	@Override
